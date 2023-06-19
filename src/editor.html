@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Openreach - Smart Surveys</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <style>
+        .bg-gradient-primary {
+            background-color: #027c67;
+            background-image: none;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="surveys.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <!-- <i class="fas fa-laugh-wink"></i> -->
+                </div>
+                <div class="sidebar-brand-text mx-3">Openreach Smart Survey</div>
+
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-search"></i>
+                    <span>Surveys</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-cogs"></i>
+                    <span>Asset Library</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-question"></i>
+                    <span>Help</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item">
+                <a class="nav-link" href="reviewer.html">
+                    <i class="fas fa-fw fa-arrow-right"></i>
+                    <span>Customer Review View</span></a>
+            </li>
+            
+            <hr class="sidebar-divider d-none d-md-block">
+            
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <!-- <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form> -->
+
+                    <h1 class="h3 text-gray-800">Job #0048</h1>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">June 18, 2023</div>
+                                        <span class="font-weight-bold">
+                                            Job #0046 has been added</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">June 16, 2023</div>
+                                        Job #0043 has been completed
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">June 16, 2023</div>
+                                        Job #0041 was rejected
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Ahmed Mohamed</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile_2.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-scans-tab" data-toggle="tab" href="#nav-scans"
+                                role="tab" aria-controls="nav-scabs" aria-selected="true">Scans</a>
+                            <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">Survey</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Details</a>
+                            <a class="nav-item nav-link" id="nav-materials-tab" data-toggle="tab" href="#nav-materials"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Bill of Materials</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">Configure</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-scans" role="tabpanel"
+                            aria-labelledby="nav-scans-tab">
+                            
+                        <style>
+                            .scans {
+                                margin-top: 20px;
+                                display: flex;
+                                flex-direction: row;
+                            }
+
+                            .scan {
+                                height: 230px;
+                                width: 150px;
+
+                                margin: 5px;
+                                border: 1px solid #ccc;
+                            }
+
+                            .scan .image {
+                                width: 148px;
+                                height: 148px;
+                            }
+
+                            .scan .image img {
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            .details {
+                                padding: 5px;
+                            }
+
+                            .date {
+                                font-size: 0.8rem;
+                            }
+
+                            .scan .add {
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+                                font-size: 4rem;
+                                width: 100%;
+                                height: 100%;
+                                justify-content: center;
+                            }
+
+
+                        </style>
+
+                        <div class="scans">
+
+                            <div class="scan">
+                                <div class="image"><img src="img/scan.png" alt=""></div>
+                                <div class="details">
+                                    <h3>Scan 1</h3>
+                                    <span class="date">13:34 19/06/2023</span>
+                                </div>
+                            </div>
+                            <div class="scan">
+                                <div class="image"><img src="img/scan.png" alt=""></div>
+                                <div class="details">
+                                    <h3>Scan 2</h3>
+                                    <span class="date">13:34 19/06/2023</span>
+                                </div>
+                            </div>
+                            <div class="scan">
+                                <div class="image"><img src="img/scan.png" alt=""></div>
+                                <div class="details">
+                                    <h3>Scan 3</h3>
+                                    <span class="date">13:34 19/06/2023</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="scan">
+                                <div class="add">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                        <div class="tab-pane fade show" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <canvas id="unity-canvas" width=1366 height=768 tabindex="-1"
+                                style="width: 1366px; height: 768px; background: #000000"></canvas>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Details</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Dev Note: Waiting for survey and build reports to complete form designs.</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Job #</label>
+                                            <input type="test" class="form-control" id="test"
+                                                placeholder="" value="0048" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Survey Name</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Class</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Location</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Location" value="Museum of Contemporary Art Australia">
+                                            <div id="map" style="width: 400px; height: 320px; margin-top: 20px"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Description</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-materials" role="tabpanel"
+                            aria-labelledby="nav-materials-tab">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Bill of Materials</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Item Name</th>
+                                                    <th>Quantity</th>
+                                                    <th>Total Cost</th>
+                                                </tr>
+                                            </thead>
+                                            <tfoot>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th>£190</th>
+                                                </tr>
+                                            </tfoot>
+                                            <tbody>
+                                                <tr>
+                                                    <td>23</td>
+                                                    <td>Example</td>
+                                                    <td>3</td>
+                                                    <td>£61</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>Example B</td>
+                                                    <td>3</td>
+                                                    <td>£63</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>01</td>
+                                                    <td>Example C</td>
+                                                    <td>2</td>
+                                                    <td>£66</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Bill of Materials</h6>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Delete Survey</h4>
+                                    <a href="#" class="btn btn-danger">Delete Survey</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Digitalnauts 2023</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Are you sure you wish to Logout?</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc_xUNbQ3rZAprbxj9NMwPv9Dfg6PIg68&callback=initMap&libraries=places&v=weekly"
+        defer></script>
+    <script src="Build/Editor.loader.js"></script>
+    <script>
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            // Mobile device style: fill the whole browser client area with the game canvas:
+            var meta = document.createElement('meta');
+            meta.name = 'viewport';
+            meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+            document.getElementsByTagName('head')[0].appendChild(meta);
+
+            var canvas = document.querySelector("#unity-canvas");
+            canvas.style.width = "100%";
+            canvas.style.height = "100%";
+            canvas.style.position = "fixed";
+
+            document.body.style.textAlign = "left";
+        }
+
+        createUnityInstance(document.querySelector("#unity-canvas"), {
+            dataUrl: "Build/Editor.data",
+            frameworkUrl: "Build/Editor.framework.js",
+            codeUrl: "Build/Editor.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "Digitalnauts",
+            productName: "Openreach MDU WebGL",
+            productVersion: "0.1",
+            // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+            // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        });
+
+        let map;
+        let service;
+        let infowindow;
+
+        function initMap() {
+            const sydney = new google.maps.LatLng(-33.867, 151.195);
+
+            infowindow = new google.maps.InfoWindow();
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: sydney,
+                zoom: 15,
+            });
+
+            const request = {
+                query: "Museum of Contemporary Art Australia",
+                fields: ["name", "geometry"],
+            };
+
+            service = new google.maps.places.PlacesService(map);
+            service.findPlaceFromQuery(request, (results, status) => {
+                if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+                    for (let i = 0; i < results.length; i++) {
+                        createMarker(results[i]);
+                    }
+
+                    map.setCenter(results[0].geometry.location);
+                }
+            });
+        }
+
+        function createMarker(place) {
+            if (!place.geometry || !place.geometry.location) return;
+
+            const marker = new google.maps.Marker({
+                map,
+                position: place.geometry.location,
+            });
+
+            google.maps.event.addListener(marker, "click", () => {
+                infowindow.setContent(place.name || "");
+                infowindow.open(map);
+            });
+        }
+
+        window.initMap = initMap;
+    </script>
+
+
+</body>
+
+</html>
